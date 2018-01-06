@@ -3,6 +3,7 @@ var assets = [
   '/pig-game/',
   '/pig-game/index.html',
   '/pig-game/css/style.css',
+  '/pig-game/css/ionicons.min.css',
   '/pig-game/js/app.js',
   '/pig-game/images/dice-1.png',
   '/pig-game/images/dice-2.png',

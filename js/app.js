@@ -16,8 +16,8 @@ rollButton.addEventListener('click', function () {
         //display the result
         document.getElementById('dice-1').style.display = 'block';
         document.getElementById('dice-2').style.display = 'block';
-        document.getElementById('dice-1').src = '../images/dice-' + dice1 + '.png';
-        document.getElementById('dice-2').src = '../images/dice-' + dice2 + '.png';
+        document.getElementById('dice-1').src = '../images/pig-game/dice-' + dice1 + '.png';
+        document.getElementById('dice-2').src = '../pig-game/images/dice-' + dice2 + '.png';
         //Set the Global score to 0 if hit 6 two times in a row
 
         //Update the round score if the rolled number was not 1
