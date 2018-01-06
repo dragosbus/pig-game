@@ -11,8 +11,10 @@ var assets = [
   '/pig-game/images/dice-4.png',
   '/pig-game/images/dice-5.png',
   '/pig-game/images/dice-6.png',
-  'https://fonts.googleapis.com/css?family=Lato:100,300,600',
-  'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'
+  '/pig-game/fonts/ionicons.eot',
+  '/pig-game/fonts/ionicons.svg',
+  '/pig-game/fonts/ionicons.ttf',
+  '/pig-game/fonts/ionicons.woff',
 ];
 
 //Check if browser support SW and register one
