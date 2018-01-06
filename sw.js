@@ -1,15 +1,15 @@
 var CACHE_NAME = 'pig-game-v1';
 var assets = [
-  '/',
-  '/index.html',
-  '/css/style.css',
-  '/js/app.js',
-  '/images/dice-1.png',
-  '/images/dice-2.png',
-  '/images/dice-3.png',
-  '/images/dice-4.png',
-  '/images/dice-5.png',
-  '/images/dice-6.png',
+  '/pig-game/',
+  '/pig-game/index.html',
+  '/pig-game/css/style.css',
+  '/pig-game/js/app.js',
+  '/pig-game/images/dice-1.png',
+  '/pig-game/images/dice-2.png',
+  '/pig-game/images/dice-3.png',
+  '/pig-game/images/dice-4.png',
+  '/pig-game/images/dice-5.png',
+  '/pig-game/images/dice-6.png',
   'https://fonts.googleapis.com/css?family=Lato:100,300,600',
   'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'
 ];
@@ -17,7 +17,7 @@ var assets = [
 //Check if browser support SW and register one
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js')
+  navigator.serviceWorker.register('/pig-game/sw.js')
     .then(response => {
       console.log(`SW registered whith scope:${response.scope}`);
     }).catch(e => {
