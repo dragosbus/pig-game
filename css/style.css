@@ -1,0 +1,243 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    font-family: Lato;
+    font-weight: 300;
+    height: 100vh;
+    color: #555;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.player-0-panel,
+.player-1-panel {
+    width: 50%;
+    height: 100%;
+    padding: 100px;
+}
+
+
+/**********************************************
+*** PLAYERS
+**********************************************/
+
+.player-name {
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    margin-left: -40px;
+}
+
+.player-score {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    color: #EB4D4D;
+    margin-bottom: 60px;
+}
+
+.active {
+    background-color: #f7f7f7;
+}
+
+.active .player-name {
+    font-weight: 300;
+}
+
+.active .player-name::after {
+    content: "\2022";
+    font-size: 47px;
+    position: absolute;
+    color: #EB4D4D;
+    top: -17px;
+    left: -20px;
+}
+
+.player-current-box {
+    background-color: #EB4D4D;
+    color: #fff;
+    width: 100px;
+    margin: 0 0 0 -50px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.player-current-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: rgb(248, 245, 245);
+}
+
+.player-current-score {
+    font-size: 15px;
+}
+
+button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    font-weight: 600;
+}
+
+button:hover i {
+    margin-right: 20px;
+}
+
+button:focus {
+    outline: none;
+}
+
+i {
+    color: #EB4D4D;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}
+
+.btn-new {
+    top: 45px;
+}
+
+.btn-roll {
+    top: 403px;
+}
+
+.btn-hold {
+    top: 467px;
+}
+
+.dice {
+    position: absolute;
+    left: 50%;
+    top: 178px;
+    transform: translateX(-50%);
+    height: 60px;
+    width: 60px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+
+.winner {
+    background-color: #f7f7f7;
+}
+
+.winner .player-name {
+    font-weight: 300;
+    color: #EB4D4D;
+}
+
+.final-score {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 510px;
+    color: #555;
+    font-size: 18px;
+    font-family: Lato;
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transition: all 0.5s ease-in;
+}
+
+.final-score:focus {
+    outline: none;
+    border: 1px solid rgba(67, 75, 192, 0.815);
+    box-shadow: none;
+}
+
+#dice-1 {
+    top: 120px;
+}
+
+#dice-2 {
+    top: 250px;
+}
+
+
+/*Media querys*/
+
+@media (min-width:660px) {
+    .player-name {
+        margin-left: 0;
+    }
+    .player-current-box {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:960px) {
+    body {
+        background-image: linear-gradient(rgba(219, 72, 72, 0.815), rgba(199, 33, 102, 0.815));
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .wrapper {
+        width: 1000px;
+        height: 600px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .player-name {
+        margin: 0 auto;
+    }
+    .player-current-box {
+        padding: 15px;
+    }
+    .player-current-score {
+        font-size: 20px;
+    }
+}

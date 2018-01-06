@@ -1,0 +1,13 @@
+{
+  "name":"The Pig Game",
+  "short_name":"PigGame",
+  "start_url":"index.html",
+  "scope":".",
+  "display":"standalone",
+  "orientation":"portrait-primary",
+  "background-color":"rgb(235, 77, 125)",
+  "theme_color":"rgba(219, 72, 72, 0.815)",
+  "description":"A simple game where the player who arrive a maxim score win.Maxim score can be set by players",
+  "dir":"ltr",
+  "lang":"en-US"
+}
